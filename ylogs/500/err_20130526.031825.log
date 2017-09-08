@@ -1,0 +1,44 @@
+La consulta fall&oacute;: Unknown column 'estandarizando_la_hce.pdf' in 'where clause'
+
+#0 /home/bnninptm/public_html/core/db/core.db.DAL.class.php(349): DatabaseMySQL->query('SELECT * FROM c...')
+#1 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentManager.class.php(569): DAL->get('cms_page', '9/estandarizand...')
+#2 /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php(49): PersistentManager->get_object('Page', '9/estandarizand...')
+#3 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentManager.class.php(869): LazyLoadStrategy->get('Page', '9/estandarizand...')
+#4 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentObject.class.php(988): PersistentManager->get('Page', '9/estandarizand...')
+#5 /home/bnninptm/public_html/apps/cms2/model/cms/cms2.model.cms.Page.class.php(135): PersistentObject::get('9/estandarizand...')
+#6 /home/bnninptm/public_html/apps/cms2/controllers/apps.cms2.controllers.CmsController.class.php(156): Page::get('9/estandarizand...')
+#7 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(43): CmsController->displayPageROAction(Array)
+#8 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('displayPageRO', Array)
+#9 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): CmsController->displayPageRO()
+#10 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#11 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#12 {main}
+
+------------- Codigo donde se dio el error -------------
+#336 
+#337       if ( $this->db->resultCount() == 1 ) return true;
+#338       return false;
+#339    }
+#340 
+#341 
+#342    // Obs: no puedo generar cosas con id = 0 si no da problemas porque se confunde con NULL.
+#343    public function get( $tableName, $id )
+#344    {
+#345       if ( $id === NULL ) throw new Exception("DAL.get: id no puede ser null");
+#346 
+#347       $q = "SELECT * FROM " . $tableName . " WHERE id=" . $id;
+#348 
+#349 >>       $this->db->query( $q );
+#350 
+#351       if ( $row = $this->db->nextRow() )
+#352       {
+#353          return $row;
+#354       }
+#355 
+#356       // TODO: deberia exceptuar o retornar null?
+#357       //throw new Exception("DAL.get: no se encuentra el objeto con id ". $id . " en la tabla " . $tableName);
+#358       // Retorno un array vacio porque se espera que retorne un array.
+#359       // Luego el PM se encarga de devolver NULL si no existe el objeto con id $id.
+#360       // Sino se hace esto, la except puede llegar hasta el usuario final... y el programador deberia hacer catch de cada get, es mas natural ver si el objeto es null en lugar de tener catchs por todos lados.
+#361       // http://code.google.com/p/yupp/issues/detail?id=132
+------------- /Codigo donde se dio el error -------------

@@ -1,0 +1,43 @@
+La consulta fall&oacute;: MySQL server has gone away
+
+#0 /home/bnninptm/public_html/core/db/core.db.DAL.class.php(405): DatabaseMySQL->query('SELECT * FROM c...')
+#1 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentManager.class.php(1035): DAL->listAll('cms_page', Object(ArrayObject))
+#2 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentManager.class.php(1048): PersistentManager->findByAttributeMatrix(Object(Page), Object(Condition), Object(ArrayObject))
+#3 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentObject.class.php(1008): PersistentManager->findBy(Object(Page), Object(Condition), Object(ArrayObject))
+#4 /home/bnninptm/public_html/apps/cms2/model/cms/cms2.model.cms.Page.class.php(141): PersistentObject::findBy(Object(Condition), Object(ArrayObject))
+#5 /home/bnninptm/public_html/apps/cms2/controllers/apps.cms2.controllers.PageController.class.php(123): Page::findBy(Object(Condition), Object(ArrayObject))
+#6 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(43): PageController->displayAction(Array)
+#7 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('display', Array)
+#8 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): PageController->display()
+#9 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#10 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#11 {main}
+
+------------- Codigo donde se dio el error -------------
+#392 
+#393       if (isset($params['sort']) || array_key_exists('sort', $params)) // && $params['sort'])
+#394       {
+#395          $orderBy = ' ORDER BY '. $params['sort'] .' '. $params['dir'];
+#396       }
+#397 
+#398       // Logger::struct( $params, "PARAMS" );
+#399 
+#400       // Where siempre viene porque en PM se inyecta las condicioens sobre las subclases (soporte de herencia)
+#401       $q = 'SELECT * FROM ' . $tableName . ' WHERE ' .
+#402            $this->db->evaluateAnyCondition( $params['where'] ) .
+#403            $orderBy . $limit;
+#404       
+#405 >>       $this->db->query( $q );
+#406 
+#407       // TODO: Como hago para devolver un array de objetos ya creados...
+#408       // SOL: devuelvo los datos, arriba en persistent object se crean los objetos.
+#409 
+#410       // FIXME: Si pudiera tener una referencia directa a la estructura que devuelve los datos no tendria que hacer este bucle.
+#411       $res = array();
+#412       while ( $row = $this->db->nextRow() )
+#413       {
+#414           $res[] = $row; // Row es un array asociativo por los nombres de los atributos (columnas).
+#415       }
+#416       return $res;
+#417       
+------------- /Codigo donde se dio el error -------------

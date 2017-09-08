@@ -1,0 +1,2215 @@
+PersistentManager: [PM::getInstance]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::listAll cms_module]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE ((cms_module.class='MenuModule' OR cms_module.class='MapModule' OR cms_module.class='NewsModule' OR cms_module.class='FilesModule' OR cms_module.class='HtmlModule' OR cms_module.class='Module') AND cms_module.deleted=0 AND cms_module.showInAllPages=1) ORDER BY id asc LIMIT 500 OFFSET 0]
+[ArtifactHolder.existsModel MenuModule 2]
+[ArtifactHolder.getModel MenuModule 2]
+LazyLoadStrategy: [PO LazyLoad::get MenuModule(2) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object MenuModule 2]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_menu_module WHERE id=2]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: MenuModule Array
+(
+    [id] => 2
+    [vertical] => 1
+    [level] => 0
+    [class] => MenuModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable MenuModule, MenuModule]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=2]
+PersistentManager: [PM.createObjectFromData MenuModule]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=2]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet class=MenuModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=menu]
+PersistentObject: [PO:aSet createdOn=2012-03-07 14:40:21]
+PersistentObject: [PO:aSet showContainer=0]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel MenuModule]
+[ArtifactHolder.existsModel HtmlModule 5]
+[ArtifactHolder.getModel HtmlModule 5]
+LazyLoadStrategy: [PO LazyLoad::get HtmlModule(5) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object HtmlModule 5]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_html_module WHERE id=5]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: HtmlModule Array
+(
+    [id] => 5
+    [content] => <table style=\"width: 100%;\" border=\"0\" cellpadding=\"10\">
+<tbody>
+<tr>
+<td valign=\"top\">
+<p>Social:</p>
+<ul>
+<li><a class=\"twitter-follow-button\" href=\"https://twitter.com/openehr_org_es\" data-show-count=\"false\" data-lang=\"es\">Seguir a @openehr_org_es</a>
+<script type=\"text/javascript\">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=\"//platform.twitter.com/widgets.js\";fjs.parentNode.insertBefore(js,fjs);}}(document,\"script\",\"twitter-wjs\");
+// ]]></script>
+</li>
+<li><a href=\"http://www.linkedin.com/groups?about=&amp;gid=4347256\"><img src=\"http://openehr.org.es/apps/cms2/skins/openehr/linkedin.gif\" border=\"0\" alt=\"openEHR en espa&ntilde;ol en LinkedIn\" /></a></li>
+<li><a href=\"http://www.facebook.com/openEHR\"><img src=\"http://openehr.org.es/apps/cms2/skins/openehr/facebook.gif\" border=\"0\" alt=\"openEHR en espa&ntilde;ol en Facebook\" /></a></li>
+</ul>
+</td>
+<td valign=\"top\">
+<p>Portal:</p>
+<ul>
+<li>FAQ</li>
+<li>Mapa del sitio</li>
+<li><a href=\"http://openehr.org.es/cms2/cms/displayPageRO?pageId=12\">Glosario</a></li>
+<li><a href=\"http://openehr.org.es/publicaciones\">Publicaciones</a></li>
+</ul>
+</td>
+<td valign=\"top\">
+<p>Proyectos:</p>
+<ul>
+<li>Modelado</li>
+<li>Estandarizaci&oacute;n</li>
+<li><a href=\"http://www.openehr.org/downloads/modellingtools\" target=\"_blank\">Software</a></li>
+<li>Capacitaci&oacute;n</li>
+</ul>
+</td>
+<td valign=\"top\">
+<p>Comunidad:</p>
+<ul>
+<li><a href=\"http://openehr.org.es/cms2/cms/displayPage?pageId=8\">Consejo directivo</a></li>
+<li><a href=\"http://openehr.org.es/cms2/cms/displayPage?pageId=7\">Grupos de trabajo</a></li>
+<li><a href=\"http://openehr.org.es/cms2/user/publicList\">Miembros</a></li>
+<li><a title=\"Foro\" href=\"http://openehr.org.es/foro\" target=\"_blank\">Foro</a></li>
+<li><a href=\"http://www.openehr.org/wiki/dashboard.action\" target=\"_blank\">Wiki</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+    [class] => HtmlModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable HtmlModule, HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=5]
+PersistentManager: [PM.createObjectFromData HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=5]
+PersistentObject: [PO:aSet content=<table style="width: 100%;" border="0" cellpadding="10">
+<tbody>
+<tr>
+<td valign="top">
+<p>Social:</p>
+<ul>
+<li><a class="twitter-follow-button" href="https://twitter.com/openehr_org_es" data-show-count="false" data-lang="es">Seguir a @openehr_org_es</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</li>
+<li><a href="http://www.linkedin.com/groups?about=&amp;gid=4347256"><img src="http://openehr.org.es/apps/cms2/skins/openehr/linkedin.gif" border="0" alt="openEHR en espa&ntilde;ol en LinkedIn" /></a></li>
+<li><a href="http://www.facebook.com/openEHR"><img src="http://openehr.org.es/apps/cms2/skins/openehr/facebook.gif" border="0" alt="openEHR en espa&ntilde;ol en Facebook" /></a></li>
+</ul>
+</td>
+<td valign="top">
+<p>Portal:</p>
+<ul>
+<li>FAQ</li>
+<li>Mapa del sitio</li>
+<li><a href="http://openehr.org.es/cms2/cms/displayPageRO?pageId=12">Glosario</a></li>
+<li><a href="http://openehr.org.es/publicaciones">Publicaciones</a></li>
+</ul>
+</td>
+<td valign="top">
+<p>Proyectos:</p>
+<ul>
+<li>Modelado</li>
+<li>Estandarizaci&oacute;n</li>
+<li><a href="http://www.openehr.org/downloads/modellingtools" target="_blank">Software</a></li>
+<li>Capacitaci&oacute;n</li>
+</ul>
+</td>
+<td valign="top">
+<p>Comunidad:</p>
+<ul>
+<li><a href="http://openehr.org.es/cms2/cms/displayPage?pageId=8">Consejo directivo</a></li>
+<li><a href="http://openehr.org.es/cms2/cms/displayPage?pageId=7">Grupos de trabajo</a></li>
+<li><a href="http://openehr.org.es/cms2/user/publicList">Miembros</a></li>
+<li><a title="Foro" href="http://openehr.org.es/foro" target="_blank">Foro</a></li>
+<li><a href="http://www.openehr.org/wiki/dashboard.action" target="_blank">Wiki</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>]
+PersistentObject: [PO:aSet class=HtmlModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=footer]
+PersistentObject: [PO:aSet createdOn=2012-03-07 14:40:21]
+PersistentObject: [PO:aSet showContainer=0]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel HtmlModule]
+[ArtifactHolder.existsModel HtmlModule 7]
+[ArtifactHolder.getModel HtmlModule 7]
+LazyLoadStrategy: [PO LazyLoad::get HtmlModule(7) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object HtmlModule 7]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_html_module WHERE id=7]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: HtmlModule Array
+(
+    [id] => 7
+    [content] => <script type=\"text/javascript\" src=\"http://widgets.twimg.com/j/2/widget.js\"></script>
+<script type=\"text/javascript\">// <![CDATA[
+new TWTR.Widget({
+  version: 2,
+  type: \'search\',
+  search: \'from:openehr OR \"openehr\" OR #openehr AND -from:arnouxiujatp0 AND -from:nigleexmqu0 AND -from:verduccisarz5\',
+  interval: 20000,
+  title: \'openEHR en Twitter\',
+  subject: \'en vivo!\',
+  width: 260,
+  height: 360,
+  theme: {
+    shell: {
+      background: \'#CEE3F8\',
+      color: \'#ffffff\'
+    },
+    tweets: {
+      background: \'#ffffff\',
+      color: \'#444444\',
+      links: \'#1985b5\'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: \'default\'
+  }
+}).render().start();
+// ]]></script>
+    [class] => HtmlModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable HtmlModule, HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=7]
+PersistentManager: [PM.createObjectFromData HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=7]
+PersistentObject: [PO:aSet content=<script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script type="text/javascript">// <![CDATA[
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'from:openehr OR "openehr" OR #openehr AND -from:arnouxiujatp0 AND -from:nigleexmqu0 AND -from:verduccisarz5',
+  interval: 20000,
+  title: 'openEHR en Twitter',
+  subject: 'en vivo!',
+  width: 260,
+  height: 360,
+  theme: {
+    shell: {
+      background: '#CEE3F8',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+// ]]></script>]
+PersistentObject: [PO:aSet class=HtmlModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=openEHR en Twitter]
+PersistentObject: [PO:aSet createdOn=2012-03-07 14:40:21]
+PersistentObject: [PO:aSet showContainer=0]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel HtmlModule]
+[ArtifactHolder.existsModel MenuModule 9]
+[ArtifactHolder.getModel MenuModule 9]
+LazyLoadStrategy: [PO LazyLoad::get MenuModule(9) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object MenuModule 9]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_menu_module WHERE id=9]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: MenuModule Array
+(
+    [id] => 9
+    [vertical] => 1
+    [level] => 2
+    [class] => MenuModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable MenuModule, MenuModule]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=9]
+PersistentManager: [PM.createObjectFromData MenuModule]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=0]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=9]
+PersistentObject: [PO:aSet vertical=1]
+PersistentObject: [PO:aSet level=2]
+PersistentObject: [PO:aSet class=MenuModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=Menú]
+PersistentObject: [PO:aSet createdOn=2012-03-10 06:24:32]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel MenuModule]
+[ArtifactHolder.existsModel NewsModule 17]
+[ArtifactHolder.getModel NewsModule 17]
+LazyLoadStrategy: [PO LazyLoad::get NewsModule(17) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object NewsModule 17]
+PersistentObject: [PO:aSet paged=1]
+PersistentObject: [PO:aSet newsPerPage=5]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_news_module WHERE id=17]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: NewsModule Array
+(
+    [id] => 17
+    [paged] => 1
+    [newsPerPage] => 5
+    [class] => NewsModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet paged=1]
+PersistentObject: [PO:aSet newsPerPage=5]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable NewsModule, NewsModule]
+PersistentObject: [PO:aSet paged=1]
+PersistentObject: [PO:aSet newsPerPage=5]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet paged=1]
+PersistentObject: [PO:aSet newsPerPage=5]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=17]
+PersistentManager: [PM.createObjectFromData NewsModule]
+PersistentObject: [PO:aSet paged=1]
+PersistentObject: [PO:aSet newsPerPage=5]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=17]
+PersistentObject: [PO:aSet paged=1]
+PersistentObject: [PO:aSet newsPerPage=5]
+PersistentObject: [PO:aSet class=NewsModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=Noticias y novedades]
+PersistentObject: [PO:aSet createdOn=2012-03-11 03:05:01]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel NewsModule]
+[ArtifactHolder.existsModel HtmlModule 24]
+[ArtifactHolder.getModel HtmlModule 24]
+LazyLoadStrategy: [PO LazyLoad::get HtmlModule(24) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object HtmlModule 24]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_html_module WHERE id=24]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: HtmlModule Array
+(
+    [id] => 24
+    [content] => <ul>
+<li><a href=\"http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=en&amp;u=http://openehr.org.es\">Translate to english</a></li>
+<li><a href=\"http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=pt&amp;u=http://openehr.org.es\">Tradu&ccedil;&atilde;o para portugu&ecirc;s</a></li>
+<li><a href=\"http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=it&amp;u=http://openehr.org.es\">Traduzione al italiano</a></li>
+</ul>
+<!--
+<script type=\"text/javascript\" src=\"http://openehr.org.es/apps/cms2/skins/openehr/bootstrap.min.js\"></script>
+<script type=\"text/javascript\" src=\"http://openehr.org.es/apps/cms2/skins/openehr/bootstrap-dropdown.js\"></script>
+<div class=\"btn-group\"><button class=\"btn\">Action</button> <button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\"><span class=\"caret\"></span></button>
+<ul class=\"dropdown-menu\">
+<li><a href=\"#\">Action</a></li>
+<li><a href=\"#\">Another action</a></li>
+<li><a href=\"#\">Something else here</a></li>
+<li><a href=\"#\">Separated link</a></li>
+</ul>
+</div>
+<script type=\"text/javascript\">// <![CDATA[
+  $(document).ready(function () {
+     $(\'.btn-group\').dropdown();
+  });
+// ]]></script>
+
+-->
+    [class] => HtmlModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable HtmlModule, HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=24]
+PersistentManager: [PM.createObjectFromData HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=24]
+PersistentObject: [PO:aSet content=<ul>
+<li><a href="http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=en&amp;u=http://openehr.org.es">Translate to english</a></li>
+<li><a href="http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=pt&amp;u=http://openehr.org.es">Tradu&ccedil;&atilde;o para portugu&ecirc;s</a></li>
+<li><a href="http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=it&amp;u=http://openehr.org.es">Traduzione al italiano</a></li>
+</ul>
+<!--
+<script type="text/javascript" src="http://openehr.org.es/apps/cms2/skins/openehr/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://openehr.org.es/apps/cms2/skins/openehr/bootstrap-dropdown.js"></script>
+<div class="btn-group"><button class="btn">Action</button> <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+</div>
+<script type="text/javascript">// <![CDATA[
+  $(document).ready(function () {
+     $('.btn-group').dropdown();
+  });
+// ]]></script>
+
+-->]
+PersistentObject: [PO:aSet class=HtmlModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=Traductor]
+PersistentObject: [PO:aSet createdOn=2012-03-31 00:07:49]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel HtmlModule]
+[ArtifactHolder.existsModel HtmlModule 25]
+[ArtifactHolder.getModel HtmlModule 25]
+LazyLoadStrategy: [PO LazyLoad::get HtmlModule(25) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object HtmlModule 25]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_html_module WHERE id=25]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: HtmlModule Array
+(
+    [id] => 25
+    [content] => <div id="cse" style="width: 260px;">Cargando</div>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">// <![CDATA[
+ 
+  google.load('search', '1', {language : 'es', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011221221471337407668:zktyaptisa0', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+// ]]></script>
+    [class] => HtmlModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable HtmlModule, HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=25]
+PersistentManager: [PM.createObjectFromData HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=25]
+PersistentObject: [PO:aSet content=<div id="cse" style="width: 260px;">Cargando</div>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">// <![CDATA[
+ 
+  google.load('search', '1', {language : 'es', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011221221471337407668:zktyaptisa0', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+// ]]></script>]
+PersistentObject: [PO:aSet class=HtmlModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=Busca en el portal]
+PersistentObject: [PO:aSet createdOn=2012-04-04 02:47:20]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel HtmlModule]
+[ArtifactHolder.existsModel HtmlModule 26]
+[ArtifactHolder.getModel HtmlModule 26]
+LazyLoadStrategy: [PO LazyLoad::get HtmlModule(26) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object HtmlModule 26]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_html_module WHERE id=26]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: HtmlModule Array
+(
+    [id] => 26
+    [content] => <!--
+<script type="text/javascript" src="http://openehr.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=blue&default_tab=people&excerpt_length=200"></script>
+<a href="http://disqus.com/">Powered by Disqus</a>
+--> <!--
+<div id="recentcomments" class="dsq-widget">
+<h2 class="dsq-widget-title">Recent Comments</h2>
+<script type="text/javascript" src="http://openehr.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</div>
+<a href="http://disqus.com/">Powered by Disqus</a>
+-->
+<div id="disqus_thread">&nbsp;</div>
+<script type="text/javascript">// <![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'openehr'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+// ]]></script>
+<noscript>Please enable JavaScript to view the &amp;amp;amp;amp;lt;a href="http://disqus.com/?ref_noscript"&amp;amp;amp;amp;gt;comments powered by Disqus.&amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;gt;</noscript><a class="dsq-brlink" href="http://disqus.com">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    [class] => HtmlModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable HtmlModule, HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=26]
+PersistentManager: [PM.createObjectFromData HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=26]
+PersistentObject: [PO:aSet content=<!--
+<script type="text/javascript" src="http://openehr.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=blue&default_tab=people&excerpt_length=200"></script>
+<a href="http://disqus.com/">Powered by Disqus</a>
+--> <!--
+<div id="recentcomments" class="dsq-widget">
+<h2 class="dsq-widget-title">Recent Comments</h2>
+<script type="text/javascript" src="http://openehr.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</div>
+<a href="http://disqus.com/">Powered by Disqus</a>
+-->
+<div id="disqus_thread">&nbsp;</div>
+<script type="text/javascript">// <![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'openehr'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+// ]]></script>
+<noscript>Please enable JavaScript to view the &amp;amp;amp;amp;lt;a href="http://disqus.com/?ref_noscript"&amp;amp;amp;amp;gt;comments powered by Disqus.&amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;gt;</noscript><a class="dsq-brlink" href="http://disqus.com">blog comments powered by <span class="logo-disqus">Disqus</span></a>]
+PersistentObject: [PO:aSet class=HtmlModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=Comentarios]
+PersistentObject: [PO:aSet createdOn=2012-04-29 21:40:58]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel HtmlModule]
+[ArtifactHolder.existsModel HtmlModule 27]
+[ArtifactHolder.getModel HtmlModule 27]
+LazyLoadStrategy: [PO LazyLoad::get HtmlModule(27) : /home/bnninptm/public_html/core/persistent/core.persistent.LazyLoadStrategy.class.php@48]
+PersistentManager: [PM.get_object HtmlModule 27]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_html_module WHERE id=27]
+PersistentManager: [PM.get_mti_object_byData: CLASS LOADED: HtmlModule Array
+(
+    [id] => 27
+    [content] => <a href=\"http://s10.flagcounter.com/more/p9v\"><img src=\"http://s10.flagcounter.com/count/p9v/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_20/viewers_Visitantes/labels_1/pageviews_0/flags_0/\" border=\"0\" alt=\"free counters\" /></a>
+    [class] => HtmlModule
+    [deleted] => 0
+)
+]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentManager: [PM::isMappedOnSameTable HtmlModule, HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DatabaseMySQL::query : SELECT * FROM cms_module WHERE id=27]
+PersistentManager: [PM.createObjectFromData HtmlModule]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet id=27]
+PersistentObject: [PO:aSet content=<a href="http://s10.flagcounter.com/more/p9v"><img src="http://s10.flagcounter.com/count/p9v/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_20/viewers_Visitantes/labels_1/pageviews_0/flags_0/" border="0" alt="free counters" /></a>]
+PersistentObject: [PO:aSet class=HtmlModule]
+PersistentObject: [PO:aSet deleted=0]
+PersistentObject: [PO:aSet title=Visitantes]
+PersistentObject: [PO:aSet createdOn=2012-05-12 17:27:43]
+PersistentObject: [PO:aSet showContainer=0]
+PersistentObject: [PO:aSet showInAllPages=1]
+PersistentObject: [PO:aSet status=normal]
+[ArtifactHolder.addModel HtmlModule]
+<pre> <br/>Array
+(
+    [0] => MenuModule Object
+        (
+            [withTable:protected] => cms_menu_module
+            [attributeValues:protected] => Array
+                (
+                    [vertical] => 1
+                    [level] => 0
+                    [items] => -1
+                    [title] => menu
+                    [createdOn] => 2012-03-07 14:40:21
+                    [showContainer] => 
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => MenuModule
+                    [deleted] => 
+                    [id] => 2
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [vertical] => type_bit
+                    [level] => type_int32
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                    [items] => MenuItem
+                )
+
+            [hasManyType:protected] => Array
+                (
+                    [items] => list
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                    [level] => Array
+                        (
+                            [0] => Nullable Object
+                                (
+                                    [nullable:Nullable:private] => 1
+                                )
+
+                        )
+
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [1] => HtmlModule Object
+        (
+            [withTable:protected] => cms_html_module
+            [attributeValues:protected] => Array
+                (
+                    [content] => <table style="width: 100%;" border="0" cellpadding="10">
+<tbody>
+<tr>
+<td valign="top">
+<p>Social:</p>
+<ul>
+<li><a class="twitter-follow-button" href="https://twitter.com/openehr_org_es" data-show-count="false" data-lang="es">Seguir a @openehr_org_es</a>
+<script type="text/javascript">// <![CDATA[
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+// ]]></script>
+</li>
+<li><a href="http://www.linkedin.com/groups?about=&amp;gid=4347256"><img src="http://openehr.org.es/apps/cms2/skins/openehr/linkedin.gif" border="0" alt="openEHR en espa&ntilde;ol en LinkedIn" /></a></li>
+<li><a href="http://www.facebook.com/openEHR"><img src="http://openehr.org.es/apps/cms2/skins/openehr/facebook.gif" border="0" alt="openEHR en espa&ntilde;ol en Facebook" /></a></li>
+</ul>
+</td>
+<td valign="top">
+<p>Portal:</p>
+<ul>
+<li>FAQ</li>
+<li>Mapa del sitio</li>
+<li><a href="http://openehr.org.es/cms2/cms/displayPageRO?pageId=12">Glosario</a></li>
+<li><a href="http://openehr.org.es/publicaciones">Publicaciones</a></li>
+</ul>
+</td>
+<td valign="top">
+<p>Proyectos:</p>
+<ul>
+<li>Modelado</li>
+<li>Estandarizaci&oacute;n</li>
+<li><a href="http://www.openehr.org/downloads/modellingtools" target="_blank">Software</a></li>
+<li>Capacitaci&oacute;n</li>
+</ul>
+</td>
+<td valign="top">
+<p>Comunidad:</p>
+<ul>
+<li><a href="http://openehr.org.es/cms2/cms/displayPage?pageId=8">Consejo directivo</a></li>
+<li><a href="http://openehr.org.es/cms2/cms/displayPage?pageId=7">Grupos de trabajo</a></li>
+<li><a href="http://openehr.org.es/cms2/user/publicList">Miembros</a></li>
+<li><a title="Foro" href="http://openehr.org.es/foro" target="_blank">Foro</a></li>
+<li><a href="http://www.openehr.org/wiki/dashboard.action" target="_blank">Wiki</a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+                    [title] => footer
+                    [createdOn] => 2012-03-07 14:40:21
+                    [showContainer] => 
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => HtmlModule
+                    [deleted] => 
+                    [id] => 5
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [content] => type_string
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                )
+
+            [hasManyType:protected] => Array
+                (
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [2] => HtmlModule Object
+        (
+            [withTable:protected] => cms_html_module
+            [attributeValues:protected] => Array
+                (
+                    [content] => <script type="text/javascript" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script type="text/javascript">// <![CDATA[
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'from:openehr OR "openehr" OR #openehr AND -from:arnouxiujatp0 AND -from:nigleexmqu0 AND -from:verduccisarz5',
+  interval: 20000,
+  title: 'openEHR en Twitter',
+  subject: 'en vivo!',
+  width: 260,
+  height: 360,
+  theme: {
+    shell: {
+      background: '#CEE3F8',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+// ]]></script>
+                    [title] => openEHR en Twitter
+                    [createdOn] => 2012-03-07 14:40:21
+                    [showContainer] => 
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => HtmlModule
+                    [deleted] => 
+                    [id] => 7
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [content] => type_string
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                )
+
+            [hasManyType:protected] => Array
+                (
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [3] => MenuModule Object
+        (
+            [withTable:protected] => cms_menu_module
+            [attributeValues:protected] => Array
+                (
+                    [vertical] => 1
+                    [level] => 2
+                    [items] => -1
+                    [title] => Menú
+                    [createdOn] => 2012-03-10 06:24:32
+                    [showContainer] => 1
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => MenuModule
+                    [deleted] => 
+                    [id] => 9
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [vertical] => type_bit
+                    [level] => type_int32
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                    [items] => MenuItem
+                )
+
+            [hasManyType:protected] => Array
+                (
+                    [items] => list
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                    [level] => Array
+                        (
+                            [0] => Nullable Object
+                                (
+                                    [nullable:Nullable:private] => 1
+                                )
+
+                        )
+
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [4] => NewsModule Object
+        (
+            [withTable:protected] => cms_news_module
+            [attributeValues:protected] => Array
+                (
+                    [paged] => 1
+                    [newsPerPage] => 5
+                    [news] => -1
+                    [title] => Noticias y novedades
+                    [createdOn] => 2012-03-11 03:05:01
+                    [showContainer] => 1
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => NewsModule
+                    [deleted] => 
+                    [id] => 17
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [paged] => type_bit
+                    [newsPerPage] => type_int32
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                    [news] => News
+                )
+
+            [hasManyType:protected] => Array
+                (
+                    [news] => list
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [5] => HtmlModule Object
+        (
+            [withTable:protected] => cms_html_module
+            [attributeValues:protected] => Array
+                (
+                    [content] => <ul>
+<li><a href="http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=en&amp;u=http://openehr.org.es">Translate to english</a></li>
+<li><a href="http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=pt&amp;u=http://openehr.org.es">Tradu&ccedil;&atilde;o para portugu&ecirc;s</a></li>
+<li><a href="http://translate.google.com/translate?hl=es&amp;sl=es&amp;tl=it&amp;u=http://openehr.org.es">Traduzione al italiano</a></li>
+</ul>
+<!--
+<script type="text/javascript" src="http://openehr.org.es/apps/cms2/skins/openehr/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://openehr.org.es/apps/cms2/skins/openehr/bootstrap-dropdown.js"></script>
+<div class="btn-group"><button class="btn">Action</button> <button class="btn dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+<li><a href="#">Separated link</a></li>
+</ul>
+</div>
+<script type="text/javascript">// <![CDATA[
+  $(document).ready(function () {
+     $('.btn-group').dropdown();
+  });
+// ]]></script>
+
+-->
+                    [title] => Traductor
+                    [createdOn] => 2012-03-31 00:07:49
+                    [showContainer] => 1
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => HtmlModule
+                    [deleted] => 
+                    [id] => 24
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [content] => type_string
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                )
+
+            [hasManyType:protected] => Array
+                (
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [6] => HtmlModule Object
+        (
+            [withTable:protected] => cms_html_module
+            [attributeValues:protected] => Array
+                (
+                    [content] => <div id="cse" style="width: 260px;">Cargando</div>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">// <![CDATA[
+ 
+  google.load('search', '1', {language : 'es', style : google.loader.themes.V2_DEFAULT});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+      '011221221471337407668:zktyaptisa0', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    customSearchControl.draw('cse');
+  }, true);
+// ]]></script>
+                    [title] => Busca en el portal
+                    [createdOn] => 2012-04-04 02:47:20
+                    [showContainer] => 1
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => HtmlModule
+                    [deleted] => 
+                    [id] => 25
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [content] => type_string
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                )
+
+            [hasManyType:protected] => Array
+                (
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [7] => HtmlModule Object
+        (
+            [withTable:protected] => cms_html_module
+            [attributeValues:protected] => Array
+                (
+                    [content] => <!--
+<script type="text/javascript" src="http://openehr.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=blue&default_tab=people&excerpt_length=200"></script>
+<a href="http://disqus.com/">Powered by Disqus</a>
+--> <!--
+<div id="recentcomments" class="dsq-widget">
+<h2 class="dsq-widget-title">Recent Comments</h2>
+<script type="text/javascript" src="http://openehr.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
+</div>
+<a href="http://disqus.com/">Powered by Disqus</a>
+-->
+<div id="disqus_thread">&nbsp;</div>
+<script type="text/javascript">// <![CDATA[
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'openehr'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+// ]]></script>
+<noscript>Please enable JavaScript to view the &amp;amp;amp;amp;lt;a href="http://disqus.com/?ref_noscript"&amp;amp;amp;amp;gt;comments powered by Disqus.&amp;amp;amp;amp;lt;/a&amp;amp;amp;amp;gt;</noscript><a class="dsq-brlink" href="http://disqus.com">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+                    [title] => Comentarios
+                    [createdOn] => 2012-04-29 21:40:58
+                    [showContainer] => 1
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => HtmlModule
+                    [deleted] => 
+                    [id] => 26
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [content] => type_string
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                )
+
+            [hasManyType:protected] => Array
+                (
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+    [8] => HtmlModule Object
+        (
+            [withTable:protected] => cms_html_module
+            [attributeValues:protected] => Array
+                (
+                    [content] => <a href="http://s10.flagcounter.com/more/p9v"><img src="http://s10.flagcounter.com/count/p9v/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_20/viewers_Visitantes/labels_1/pageviews_0/flags_0/" border="0" alt="free counters" /></a>
+                    [title] => Visitantes
+                    [createdOn] => 2012-05-12 17:27:43
+                    [showContainer] => 
+                    [showInAllPages] => 1
+                    [status] => normal
+                    [class] => HtmlModule
+                    [deleted] => 
+                    [id] => 27
+                )
+
+            [attributeTypes:protected] => Array
+                (
+                    [content] => type_string
+                    [title] => type_string
+                    [createdOn] => type_datetime
+                    [showContainer] => type_bit
+                    [showInAllPages] => type_bit
+                    [status] => type_string
+                    [class] => type_string
+                    [deleted] => type_bit
+                    [id] => type_int32
+                )
+
+            [hasOne:protected] => Array
+                (
+                )
+
+            [hasMany:protected] => Array
+                (
+                )
+
+            [hasManyType:protected] => Array
+                (
+                )
+
+            [belongsTo:protected] => Array
+                (
+                )
+
+            [constraints:protected] => Array
+                (
+                )
+
+            [errors:protected] => Errors Object
+                (
+                    [errors:Errors:private] => Array
+                        (
+                        )
+
+                )
+
+            [validated:protected] => 
+            [dirty:protected] => 
+            [dirtyOne:protected] => 
+            [dirtyMany:protected] => 
+            [sessId:protected] => 
+            [loopDetectorSessId:protected] => 
+            [afterSave:protected] => Array
+                (
+                )
+
+            [beforeSave:protected] => Array
+                (
+                )
+
+        )
+
+)
+</pre>
+PersistentObject: [PO:aAddTo modules []=MenuModule]
+PersistentObject: [PO:aAddTo modules []=HtmlModule]
+PersistentObject: [PO:aAddTo modules []=HtmlModule]
+PersistentObject: [PO:aAddTo modules []=MenuModule]
+PersistentObject: [PO:aAddTo modules []=NewsModule]
+PersistentObject: [PO:aAddTo modules []=HtmlModule]
+PersistentObject: [PO:aAddTo modules []=HtmlModule]
+PersistentObject: [PO:aAddTo modules []=HtmlModule]
+PersistentObject: [PO:aAddTo modules []=HtmlModule]
+PersistentObject: [PO:save Page]
+PersistentObject: [PO:validate Page]
+PersistentObject: [PO:aSet normalizedName=eventos]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [Excecute before save Page]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM::withTransaction]
+[DatabaseMySQL::execute : SET AUTOCOMMIT=0]
+[DatabaseMySQL::execute : START TRANSACTION]
+PersistentManager: [PM:save Page]
+PersistentManager: [PM::save_cascade Page SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object Page]
+[DAL::insert Page in table=cms_page]
+[MTI::getPartialInstancesToSave Page]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet name=Eventos]
+PersistentObject: [PO:aSet normalizedName=eventos]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:aSet description=información de eventos relativos a openEHR y a la informatización en salud]
+PersistentObject: [PO:aSet keywords=eventos, openehr, congresos, charlas, ponencias, simposios, cursos, talleres]
+PersistentObject: [PO:aSet class=Page]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet parent_id=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page]
+PersistentObject: [PO:aSet id=15]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page ( name ,normalizedname ,createdon ,lastupdate ,status ,description ,keywords ,class ,deleted ,parent_id ,id ) VALUES ('Eventos' ,'eventos' ,'2013-04-13 19:29:26' ,'2013-04-13 19:29:26' ,'normal' ,'información de eventos relativos a openEHR y a la informatización en salud' ,'eventos, openehr, congresos, charlas, ponencias, simposios, cursos, talleres' ,'Page' ,'0' ,NULL ,'15' );]
+[/DAL::insert]
+PersistentObject: [PO:validate PageZone]
+PersistentManager: [PM::save_cascade PageZone SESSIONID: 1365892166_1698706520_1875698384]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM:save_object PageZone]
+[DAL::insert PageZone in table=cms_page_zone]
+[MTI::getPartialInstancesToSave PageZone]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet name=top_right]
+PersistentObject: [PO:aSet class=PageZone]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet page_id=15]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone]
+PersistentObject: [PO:aSet id=87]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone ( name ,class ,deleted ,page_id ,id ) VALUES ('top_right' ,'PageZone' ,'0' ,'15' ,'87' );]
+[/DAL::insert]
+PersistentManager: [PM::save_assoc Page -> PageZone]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=Page assocAttr=zones]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zones_cms_page_zone]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zones_cms_page_zone WHERE (cms_page_zones_cms_page_zone.owner_id=15 AND cms_page_zones_cms_page_zone.ref_id=87)]
+[DAL::insert ObjectReference in table=cms_page_zones_cms_page_zone]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=15]
+PersistentObject: [PO:aSet ref_id=87]
+PersistentObject: [PO:aSet type=2]
+PersistentObject: [PO:aSet ord=]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zones_cms_page_zone]
+PersistentObject: [PO:aSet id=87]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zones_cms_page_zone ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('15' ,'87' ,'2' ,NULL ,'ObjectReference' ,'0' ,'87' );]
+[/DAL::insert]
+PersistentObject: [PO:validate PageZone]
+PersistentManager: [PM::save_cascade PageZone SESSIONID: 1365892166_1698706520_1875698384]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM:save_object PageZone]
+[DAL::insert PageZone in table=cms_page_zone]
+[MTI::getPartialInstancesToSave PageZone]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet name=content]
+PersistentObject: [PO:aSet class=PageZone]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet page_id=15]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone]
+PersistentObject: [PO:aSet id=88]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone ( name ,class ,deleted ,page_id ,id ) VALUES ('content' ,'PageZone' ,'0' ,'15' ,'88' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate MenuModule]
+PersistentManager: [PM::save_cascade MenuModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object MenuModule]
+PersistentManager: [PM::save_assoc PageZone -> MenuModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=2)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=2]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=0]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=585]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'2' ,'1' ,'0' ,'ObjectReference' ,'0' ,'585' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate HtmlModule]
+PersistentManager: [PM::save_cascade HtmlModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object HtmlModule]
+PersistentManager: [PM::save_assoc PageZone -> HtmlModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=5)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=5]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=1]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=586]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'5' ,'1' ,'1' ,'ObjectReference' ,'0' ,'586' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate HtmlModule]
+PersistentManager: [PM::save_cascade HtmlModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object HtmlModule]
+PersistentManager: [PM::save_assoc PageZone -> HtmlModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=7)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=7]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=2]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=587]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'7' ,'1' ,'2' ,'ObjectReference' ,'0' ,'587' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate MenuModule]
+PersistentManager: [PM::save_cascade MenuModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object MenuModule]
+PersistentManager: [PM::save_assoc PageZone -> MenuModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=9)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=9]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=3]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=588]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'9' ,'1' ,'3' ,'ObjectReference' ,'0' ,'588' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate NewsModule]
+PersistentManager: [PM::save_cascade NewsModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object NewsModule]
+PersistentManager: [PM::save_assoc PageZone -> NewsModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=17)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=17]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=4]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=589]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'17' ,'1' ,'4' ,'ObjectReference' ,'0' ,'589' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate HtmlModule]
+PersistentManager: [PM::save_cascade HtmlModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object HtmlModule]
+PersistentManager: [PM::save_assoc PageZone -> HtmlModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=24)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=24]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=5]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=590]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'24' ,'1' ,'5' ,'ObjectReference' ,'0' ,'590' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate HtmlModule]
+PersistentManager: [PM::save_cascade HtmlModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object HtmlModule]
+PersistentManager: [PM::save_assoc PageZone -> HtmlModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=25)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=25]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=6]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=591]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'25' ,'1' ,'6' ,'ObjectReference' ,'0' ,'591' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate HtmlModule]
+PersistentManager: [PM::save_cascade HtmlModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object HtmlModule]
+PersistentManager: [PM::save_assoc PageZone -> HtmlModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=26)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=26]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=7]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=592]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'26' ,'1' ,'7' ,'ObjectReference' ,'0' ,'592' );]
+[/DAL::insert]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+PersistentObject: [PO:validate HtmlModule]
+PersistentManager: [PM::save_cascade HtmlModule SESSIONID: 1365892166_1698706520_1875698384]
+PersistentManager: [PM:save_object HtmlModule]
+PersistentManager: [PM::save_assoc PageZone -> HtmlModule]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=PageZone assocAttr=modules]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet showContainer=1]
+PersistentObject: [PO:aSet showInAllPages=]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zone_modules_cms_module]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zone_modules_cms_module WHERE (cms_page_zone_modules_cms_module.owner_id=88 AND cms_page_zone_modules_cms_module.ref_id=27)]
+[DAL::insert ObjectReference in table=cms_page_zone_modules_cms_module]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=88]
+PersistentObject: [PO:aSet ref_id=27]
+PersistentObject: [PO:aSet type=1]
+PersistentObject: [PO:aSet ord=8]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone_modules_cms_module]
+PersistentObject: [PO:aSet id=593]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone_modules_cms_module ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('88' ,'27' ,'1' ,'8' ,'ObjectReference' ,'0' ,'593' );]
+[/DAL::insert]
+PersistentManager: [PM::save_assoc Page -> PageZone]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=Page assocAttr=zones]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zones_cms_page_zone]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zones_cms_page_zone WHERE (cms_page_zones_cms_page_zone.owner_id=15 AND cms_page_zones_cms_page_zone.ref_id=88)]
+[DAL::insert ObjectReference in table=cms_page_zones_cms_page_zone]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=15]
+PersistentObject: [PO:aSet ref_id=88]
+PersistentObject: [PO:aSet type=2]
+PersistentObject: [PO:aSet ord=]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zones_cms_page_zone]
+PersistentObject: [PO:aSet id=88]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zones_cms_page_zone ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('15' ,'88' ,'2' ,NULL ,'ObjectReference' ,'0' ,'88' );]
+[/DAL::insert]
+PersistentObject: [PO:validate PageZone]
+PersistentManager: [PM::save_cascade PageZone SESSIONID: 1365892166_1698706520_1875698384]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM:save_object PageZone]
+[DAL::insert PageZone in table=cms_page_zone]
+[MTI::getPartialInstancesToSave PageZone]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet name=col1]
+PersistentObject: [PO:aSet class=PageZone]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet page_id=15]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone]
+PersistentObject: [PO:aSet id=89]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone ( name ,class ,deleted ,page_id ,id ) VALUES ('col1' ,'PageZone' ,'0' ,'15' ,'89' );]
+[/DAL::insert]
+PersistentManager: [PM::save_assoc Page -> PageZone]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=Page assocAttr=zones]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zones_cms_page_zone]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zones_cms_page_zone WHERE (cms_page_zones_cms_page_zone.owner_id=15 AND cms_page_zones_cms_page_zone.ref_id=89)]
+[DAL::insert ObjectReference in table=cms_page_zones_cms_page_zone]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=15]
+PersistentObject: [PO:aSet ref_id=89]
+PersistentObject: [PO:aSet type=2]
+PersistentObject: [PO:aSet ord=]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zones_cms_page_zone]
+PersistentObject: [PO:aSet id=89]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zones_cms_page_zone ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('15' ,'89' ,'2' ,NULL ,'ObjectReference' ,'0' ,'89' );]
+[/DAL::insert]
+PersistentObject: [PO:validate PageZone]
+PersistentManager: [PM::save_cascade PageZone SESSIONID: 1365892166_1698706520_1875698384]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM:save_object PageZone]
+[DAL::insert PageZone in table=cms_page_zone]
+[MTI::getPartialInstancesToSave PageZone]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet name=col2]
+PersistentObject: [PO:aSet class=PageZone]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet page_id=15]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone]
+PersistentObject: [PO:aSet id=90]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone ( name ,class ,deleted ,page_id ,id ) VALUES ('col2' ,'PageZone' ,'0' ,'15' ,'90' );]
+[/DAL::insert]
+PersistentManager: [PM::save_assoc Page -> PageZone]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=Page assocAttr=zones]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zones_cms_page_zone]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zones_cms_page_zone WHERE (cms_page_zones_cms_page_zone.owner_id=15 AND cms_page_zones_cms_page_zone.ref_id=90)]
+[DAL::insert ObjectReference in table=cms_page_zones_cms_page_zone]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=15]
+PersistentObject: [PO:aSet ref_id=90]
+PersistentObject: [PO:aSet type=2]
+PersistentObject: [PO:aSet ord=]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zones_cms_page_zone]
+PersistentObject: [PO:aSet id=90]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zones_cms_page_zone ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('15' ,'90' ,'2' ,NULL ,'ObjectReference' ,'0' ,'90' );]
+[/DAL::insert]
+PersistentObject: [PO:validate PageZone]
+PersistentManager: [PM::save_cascade PageZone SESSIONID: 1365892166_1698706520_1875698384]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM:save_object PageZone]
+[DAL::insert PageZone in table=cms_page_zone]
+[MTI::getPartialInstancesToSave PageZone]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet name=col3]
+PersistentObject: [PO:aSet class=PageZone]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet page_id=15]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone]
+PersistentObject: [PO:aSet id=91]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone ( name ,class ,deleted ,page_id ,id ) VALUES ('col3' ,'PageZone' ,'0' ,'15' ,'91' );]
+[/DAL::insert]
+PersistentManager: [PM::save_assoc Page -> PageZone]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=Page assocAttr=zones]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zones_cms_page_zone]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zones_cms_page_zone WHERE (cms_page_zones_cms_page_zone.owner_id=15 AND cms_page_zones_cms_page_zone.ref_id=91)]
+[DAL::insert ObjectReference in table=cms_page_zones_cms_page_zone]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=15]
+PersistentObject: [PO:aSet ref_id=91]
+PersistentObject: [PO:aSet type=2]
+PersistentObject: [PO:aSet ord=]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zones_cms_page_zone]
+PersistentObject: [PO:aSet id=91]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zones_cms_page_zone ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('15' ,'91' ,'2' ,NULL ,'ObjectReference' ,'0' ,'91' );]
+[/DAL::insert]
+PersistentObject: [PO:validate PageZone]
+PersistentManager: [PM::save_cascade PageZone SESSIONID: 1365892166_1698706520_1875698384]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM:save_object PageZone]
+[DAL::insert PageZone in table=cms_page_zone]
+[MTI::getPartialInstancesToSave PageZone]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet name=footer]
+PersistentObject: [PO:aSet class=PageZone]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet page_id=15]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zone]
+PersistentObject: [PO:aSet id=92]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zone ( name ,class ,deleted ,page_id ,id ) VALUES ('footer' ,'PageZone' ,'0' ,'15' ,'92' );]
+[/DAL::insert]
+PersistentManager: [PM::save_assoc Page -> PageZone]
+PersistentObject: [PO:getHasOneAttributeNameByAssocAttribute assocClass=Page assocAttr=zones]
+PersistentObject: [PO:aSet createdOn=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet lastUpdate=2013-04-13 19:29:26]
+PersistentObject: [PO:aSet status=normal]
+[DAL::count cms_page_zones_cms_page_zone]
+[DatabaseMySQL::query : SELECT count(id) as cant FROM cms_page_zones_cms_page_zone WHERE (cms_page_zones_cms_page_zone.owner_id=15 AND cms_page_zones_cms_page_zone.ref_id=92)]
+[DAL::insert ObjectReference in table=cms_page_zones_cms_page_zone]
+[MTI::getPartialInstancesToSave ObjectReference]
+[MTI::getMultipleTableInheritance]
+PersistentObject: [PO:aSet owner_id=15]
+PersistentObject: [PO:aSet ref_id=92]
+PersistentObject: [PO:aSet type=2]
+PersistentObject: [PO:aSet ord=]
+PersistentObject: [PO:aSet class=ObjectReference]
+PersistentObject: [PO:aSet deleted=]
+PersistentObject: [PO:aSet id=]
+PersistentObject: [PO:aSet deleted=]
+[DatabaseMySQL::query : SELECT MAX(id) AS max FROM cms_page_zones_cms_page_zone]
+PersistentObject: [PO:aSet id=92]
+[DAL:insert_query /home/bnninptm/public_html/core/db/core.db.DAL.class.php 606]
+[DatabaseMySQL::execute : INSERT INTO cms_page_zones_cms_page_zone ( owner_id ,ref_id ,type ,ord ,class ,deleted ,id ) VALUES ('15' ,'92' ,'2' ,NULL ,'ObjectReference' ,'0' ,'92' );]
+[/DAL::insert]
+PersistentManager: [PM::commitTransaction]
+[DatabaseMySQL::execute : COMMIT]
+PersistentObject: [Excecute after save Page]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM:save_object PageZone]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM:save_object PageZone]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM:save_object PageZone]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM:save_object PageZone]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM:save_object PageZone]
+PersistentObject: [PO:update_simple_assocs]
+PersistentManager: [PM::getInstance]
+PersistentManager: [PM:save_object PageZone]

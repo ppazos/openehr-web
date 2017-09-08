@@ -1,0 +1,55 @@
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+  background-color: #efefef;
+}
+#body {
+  padding: 10px;
+  margin-top: 2.0em;
+}
+table {
+  border: 1px solid #000;
+  /* spacing: 0px; */
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+th {
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  background-color: #ddd;
+  color: #000;
+  font-family: arial, verdana, tahoma;
+  font-size: 12px;
+}
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  background-color: #f5f5f5;
+  font-family: arial, verdana, tahoma;
+  font-size: 12px;
+}
+#actions {
+  border: 1px solid #ccc;
+  border-style: solid none solid none;
+  padding: 7px 12px;
+}
+#actions a {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.order_desc, .order_asc {
+  background-position: 0px;
+  background-repeat: no-repeat;
+  padding-left: 12px;
+}
+
+/* Estilo para modales */
+
+h1 {
+  font-size: 1.8em;
+}
+
+.field.submit { /* field submit es div de submit de YuppForm */
+  text-align: right;
+  padding-top: 10px;
+}

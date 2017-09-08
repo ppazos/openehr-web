@@ -1,0 +1,9 @@
+RewriteEngine on
+
+#Si es archivo fisico
+#RewriteCond %{REQUEST_FILENAME} -f
+
+# Todo va al punto de entrada
+#RewriteRule (.*) ./
+
+RedirectMatch /ylogs(.*) /

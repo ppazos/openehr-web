@@ -1,0 +1,36 @@
+<NotepadPlus>
+    <UserLang name="Adl" ext="adl">
+        <Settings>
+            <Global caseIgnored="no" />
+            <TreatAsSymbol comment="no" commentLine="no" />
+            <Prefix words1="no" words2="no" words3="no" words4="no" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Delimiters">&quot;[0&quot;]0</Keywords>
+            <Keywords name="Folder+"></Keywords>
+            <Keywords name="Folder-"></Keywords>
+            <Keywords name="Operators">( ) [ ] { } &lt; = &gt;</Keywords>
+            <Keywords name="Comment">1 2 0--</Keywords>
+            <Keywords name="Words1">archetype concept language description original_language original_author details purpose use keywords misuse copyright lifecycle_state other_contributors other_details definition ontology term_definitions items text comment adl_version translations author specialise include</Keywords>
+            <Keywords name="Words2">EVALUATION OBSERVATION ACTION INSTRUTION ADMIN_ENTRY  CLUSTER ELEMENT ITEM_TREE ITEM_LIST ITEM_SINGLE ITEM_TABLE  DV_DATE_TIME DV_TEXT DV_CODED_TEXT DV_COUNT DV_BOOLEAN DV_DURATION DV_MULTIMEDIA DV_PARSEABLE C_PRIMITIVE C_BOOLEAN C_STRING C_INTEGER C_REAL C_DATE C_TIME  C_DATE_TIME C_DURATION C_DV_STATE C_CODE_PHRASE C_DV_ORDINAL C_DV_QUANTITY C_DV_QUANTITY_ITEM EVENT HISTORY</Keywords>
+            <Keywords name="Words3">value matches occurrences cardinality magnitude protocol data defining_code units precision allow_archetype media_type list property events archetype_id/value</Keywords>
+            <Keywords name="Words4">True False unordered</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" styleID="11" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDEROPEN" styleID="12" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="FOLDERCLOSE" styleID="13" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD1" styleID="5" fgColor="0000FF" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD2" styleID="6" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="1" />
+            <WordsStyle name="KEYWORD3" styleID="7" fgColor="0080C0" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="KEYWORD4" styleID="8" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT" styleID="1" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="COMMENT LINE" styleID="2" fgColor="008000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="NUMBER" styleID="4" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="OPERATOR" styleID="10" fgColor="FF0000" bgColor="FFFFFF" fontName="" fontStyle="1" />
+            <WordsStyle name="DELIMINER1" styleID="14" fgColor="D76B00" bgColor="FFFFFF" fontName="" fontStyle="0" />
+            <WordsStyle name="DELIMINER2" styleID="15" fgColor="FF0080" bgColor="FFFFFF" fontName="" fontStyle="1" />
+            <WordsStyle name="DELIMINER3" styleID="16" fgColor="000000" bgColor="FFFFFF" fontName="" fontStyle="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>

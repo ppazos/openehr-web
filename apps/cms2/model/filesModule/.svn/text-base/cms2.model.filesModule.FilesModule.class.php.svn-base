@@ -1,0 +1,75 @@
+<?php
+
+YuppLoader::load('cms2.model.cms', 'Module');
+YuppLoader::load('cms2.model.filesModule', 'FilesModule');
+
+class FilesModule extends Module
+{
+   const TABLE = 'cms_files_module';
+   
+   /**
+    * Devuelve todos los FileInfo asociados a este modulo.
+    */
+   public function getFiles()
+   {
+      return FileInfo::findBy( Condition::EQ(FileInfo::TABLE, 'module_id', $this->getId()), new ArrayObject() );
+   }
+   
+   function __construct($args = array (), $isSimpleInstance = false)
+   {
+      $this->setWithTable(self::TABLE);
+        
+      $this->addAttribute('path', Datatypes :: TEXT);   // desde donde se van a leer los archivos
+      $this->addAttribute('filter', Datatypes :: TEXT); // regex, si matchea se incluye
+      $this->addAttribute('except', Datatypes :: TEXT); // regex, si matchea se excluye
+      $this->addAttribute('lastScan', Datatypes :: DATETIME); // ultima vez que se reviso la path en busca de nuevos archivos
+      
+      // opciones de visualizacion
+      $this->addAttribute('showSize', Datatypes :: BOOLEAN); // muestra tamanio de los archivos
+      $this->addAttribute('showDescription', Datatypes :: BOOLEAN); // muestra descripcion de los archivos
+      $this->addAttribute('showExtension', Datatypes :: BOOLEAN); // muestra extension con el nombre del archivo
+      
+      $this->addConstraints('path', array (
+        //Constraint :: nullable(false),  // problema porque el create module es generico y no incluye un campo para path.
+        Constraint :: maxLength(255)
+      ));
+      
+      $this->setShowSize(false);
+      $this->setShowDescription(true);
+      $this->setShowExtension(false);
+
+
+      parent :: __construct($args, $isSimpleInstance);
+   }
+
+   public static function listAll(ArrayObject $params)
+   {
+      self :: $thisClass = __CLASS__;
+      return PersistentObject :: listAll($params);
+   }
+
+   public static function count()
+   {
+      self :: $thisClass = __CLASS__;
+      return PersistentObject :: count();
+   }
+
+   public static function get($id)
+   {
+      self :: $thisClass = __CLASS__;
+      return PersistentObject :: get($id);
+   }
+
+   public static function findBy(Condition $condition, ArrayObject $params)
+   {
+      self :: $thisClass = __CLASS__;
+      return PersistentObject :: findBy($condition, $params);
+   }
+
+   public static function countBy(Condition $condition)
+   {
+      self :: $thisClass = __CLASS__;
+      return PersistentObject :: countBy($condition);
+   }
+}
+?>

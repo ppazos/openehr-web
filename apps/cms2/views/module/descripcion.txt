@@ -1,0 +1,1 @@
+en este directorio va al template que muestra el modulo base "module".

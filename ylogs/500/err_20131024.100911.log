@@ -1,0 +1,45 @@
+mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+#0 [internal function]: my_warning_handler(2, 'mysql_connect()...', '/home/bnninptm/...', 40, Array)
+#1 /home/bnninptm/public_html/core/db/core.db.DatabaseMySQL.class.php(40): mysql_connect('localhost', 'bnninptm_m15q7u...', 'Fp9i)NaQ1oq[', true)
+#2 /home/bnninptm/public_html/core/db/core.db.DAL.class.php(137): DatabaseMySQL->connect('localhost', 'bnninptm_m15q7u...', 'Fp9i)NaQ1oq[', 'bnninptm_prod')
+#3 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentManager.class.php(85): DAL->__construct('cms2')
+#4 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentManager.class.php(64): PersistentManager->__construct(Object(LazyLoadStrategy))
+#5 /home/bnninptm/public_html/core/persistent/core.persistent.PersistentObject.class.php(988): PersistentManager::getInstance()
+#6 /home/bnninptm/public_html/apps/cms2/model/cms/cms2.model.cms.Page.class.php(135): PersistentObject::get('1')
+#7 /home/bnninptm/public_html/apps/cms2/controllers/apps.cms2.controllers.CmsController.class.php(185): Page::get('1')
+#8 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(43): CmsController->displayPageROAction(Array)
+#9 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('displayPageRO', Array)
+#10 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): CmsController->displayPageRO()
+#11 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#12 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#13 {main}
+
+------------- Codigo donde se dio el error -------------
+#27    // http://code.google.com/p/yupp/issues/detail?id=123
+#28    public function createDatabase($dbname)
+#29    {
+#30       // http://dev.mysql.com/doc/refman/5.0/en/create-database.html
+#31       $this->execute("CREATE DATABASE $dbname");
+#32    }
+#33 
+#34    public function connect( $dbhost, $dbuser, $dbpass, $dbName )
+#35    {
+#36       //Logger::getInstance()->log("DatabaseMySQL::connect " . $dbhost ." ". $dbuser ." ". $dbpass ." ". $dbName);
+#37 
+#38       // Se le pasa new_link=true para que si se le pasan los mismos parametros, igual cree una nueva conexion, si no devuelve la vieja conexion.
+#39       // Asi, las conexiones de distintas apps son manejadas de forma independiente, aun si usan la misma BD.
+#40 >>       $this->connection = mysql_connect($dbhost, $dbuser, $dbpass, true);
+#41 
+#42       Logger::getInstance()->log("DatabaseMySQL::connect ". $this->connection);
+#43 
+#44       if ( !$this->connection )
+#45       {
+#46          throw new Exception( "No pudo conectarse a MySQL: " . mysql_error() );
+#47       }
+#48 
+#49       $this->selectDB( $dbName );
+#50    }
+#51 
+#52    private function selectDB ( $dbName )
+------------- /Codigo donde se dio el error -------------

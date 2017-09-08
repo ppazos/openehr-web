@@ -1,0 +1,38 @@
+Undefined index:  pageId
+
+#0 /home/bnninptm/public_html/apps/cms2/controllers/apps.cms2.controllers.CmsController.class.php(156): my_warning_handler(8, 'Undefined index...', '/home/bnninptm/...', 156, Array)
+#1 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(43): CmsController->displayPageROAction(Array)
+#2 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('displayPageRO', Array)
+#3 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): CmsController->displayPageRO()
+#4 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#5 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#6 {main}
+
+------------- Codigo donde se dio el error -------------
+#143       //$dal = new DAL('cms2');
+#144       //$layouts = $dal->sqlQuery('SELECT id, name FROM cms_layouts');
+#145       //print_r($layouts); // Array ( [0] => Array ( [name] => simple ) [1] => Array ( [name] => 3cols ) ) 
+#146       
+#147       $page = Page::get( $this->params['pageId'] );
+#148       return array('page'=>$page);
+#149    }
+#150    
+#151    /**
+#152     * ReadOnly: es la pagina sin que es usuario este logueado
+#153     */
+#154    public function displayPageROAction()
+#155    {
+#156 >>       $page = Page::get( $this->params['pageId'] );
+#157       
+#158       //return array('page'=>$page);
+#159       
+#160       // Nuevo por urls amigables
+#161       // controller = display
+#162       // action = p.nname
+#163       // En AppMapping se mapea a PageController.display(p.nname)
+#164       return $this->redirect(array('controller'=>'display', 'action'=>$page->getNormalizedName()));
+#165    }
+#166    
+#167    public function deletePageAction()
+#168    {
+------------- /Codigo donde se dio el error -------------

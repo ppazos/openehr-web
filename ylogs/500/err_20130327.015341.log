@@ -1,0 +1,8 @@
+#0 /home/bnninptm/public_html/apps/cms2/skins/openehr/layout.template.php(11): my_warning_handler(8, 'Undefined varia...', '/home/bnninptm/...', 11, Array)
+#1 /home/bnninptm/public_html/core/mvc/core.mvc.Helpers.class.php(359): include('/home/bnninptm/...')
+#2 /home/bnninptm/public_html/apps/cms2/views/cms/displayPageRO.view.php(358): Helpers::template(Array)
+#3 /home/bnninptm/public_html/core/layout/core.layout.LayoutManager.class.php(102): include_once('/home/bnninptm/...')
+#4 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(428): LayoutManager->renderWithLayout('apps/cms2/views...')
+#5 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(244): RequestManager::render(Array, Object(ViewCommand), Object(YuppContext), Object(Router))
+#6 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#7 {main}

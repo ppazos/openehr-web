@@ -1,0 +1,7 @@
+#0 /home/bnninptm/public_html/core/mvc/view/error/500.view.php(80): my_warning_handler(8, 'Undefined offse...', '/home/bnninptm/...', 80, Array)
+#1 /home/bnninptm/public_html/core/mvc/view/error/500.view.php(168): getOutput(Object(Model), true)
+#2 /home/bnninptm/public_html/core/layout/core.layout.LayoutManager.class.php(102): include_once('/home/bnninptm/...')
+#3 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(428): LayoutManager->renderWithLayout('core/mvc/view/e...')
+#4 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(244): RequestManager::render(Array, Object(ViewCommand), Object(YuppContext), Object(Router))
+#5 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#6 {main}

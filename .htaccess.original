@@ -1,0 +1,155 @@
+# -FrontPage-
+
+IndexIgnore .htaccess */.??* *~ *# */HEADER* */README* */_vti*
+
+<Limit GET POST>
+#The next line modified by DenyIP
+order allow,deny
+#The next line modified by DenyIP
+#deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName openehr.org.es
+AuthUserFile /home/bnninptm/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/bnninptm/public_html/_vti_pvt/service.grp
+
+# friendly urls
+redirect /publicaciones /cms2/cms/displayPageRO?pageId=9
+
+
+#  mod_rewrite in use
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^openehr\.org\.es$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.openehr\.org\.es$
+RewriteRule ^curso$ "https\:\/\/docs\.google\.com\/spreadsheet\/viewform\?formkey\=dDlLUmpMX0pzaHJzZ21FMGVLN1dMUWc6MQ" [R=302,L]
+RewriteRule ^cursoisis$ "https\:\/\/docs\.google\.com\/spreadsheet\/viewform\?formkey\=dDVvQ2I4U1VLbUdYLXR6cU5EWXl6U3c6MA" [R=302,L]
+
+# Si es un archivo fisico, dejarlo pasar.
+RewriteCond %{REQUEST_FILENAME} !-f
+# Todo va al punto de entrada
+RewriteRule (.*) ./index.php
+<Files 403.shtml>
+order allow,deny
+allow from all
+</Files>
+
+deny from 178.154.243.83
+deny from 93.158.134.11
+deny from 208.76.54.225
+deny from 93.158.147.8
+deny from 94.100.191.204
+deny from 217.69.133.31
+deny from 50.16.28.173
+deny from 184.73.75.144
+deny from 23.20.138.203
+deny from 97.79.236.70
+deny from 107.20.10.145
+deny from 203.211.140.185
+deny from 210.193.3.9
+deny from 213.186.127.12
+deny from 222.255.29.106
+deny from 92.60.176.0/20
+deny from 93.158.128.0/18
+deny from 87.250.254.241
+deny from 195.70.37.178
+deny from 176.31.147.74
+
+
+deny from 64.120.93.118
+deny from 37.59.228.40
+deny from 62.219.8.229
+deny from 62.5.128.0/17
+deny from 62.6.0.0/15
+deny from 62.8.0.0/13
+deny from 62.16.0.0/12
+deny from 62.32.0.0/11
+deny from 62.64.0.0/10
+deny from 62.128.0.0/10
+deny from 62.192.0.0/11
+deny from 62.224.0.0/14
+deny from 62.228.0.0/15
+deny from 62.230.0.0/16
+deny from 62.231.0.0/17
+deny from 62.231.128.0/18
+deny from 77.34.0.0/15
+deny from 77.36.0.0/14
+deny from 77.40.0.0/13
+deny from 77.48.0.0/12
+deny from 77.64.0.0/10
+deny from 77.128.0.0/9
+deny from 88.0.0.0/6
+deny from 92.0.0.0/7
+deny from 95.0.0.0/9
+deny from 95.128.0.0/10
+deny from 95.192.0.0/12
+deny from 95.208.0.0/13
+deny from 95.216.0.0/14
+deny from 95.220.0.0/15
+deny from 109.72.64.0/18
+deny from 109.72.128.0/17
+deny from 109.73.0.0/16
+deny from 109.74.0.0/15
+deny from 109.76.0.0/14
+deny from 109.80.0.0/12
+deny from 109.96.0.0/11
+deny from 109.128.0.0/11
+deny from 109.160.0.0/12
+deny from 109.176.0.0/15
+deny from 188.6.0.0/15
+deny from 188.8.0.0/13
+deny from 188.16.0.0/12
+deny from 188.32.0.0/11
+deny from 188.128.0.0/10
+deny from 188.192.0.0/11
+deny from 188.224.0.0/12
+deny from 188.240.0.0/14
+deny from 188.244.0.0/15
+deny from 188.246.0.0/16
+deny from 188.247.0.0/18
+deny from 188.64.189.113
+deny from 46.119.127.
+deny from 64.120.63.228
+deny from 108.177.138.113
+deny from 108.177.229.115
+deny from 108.177.139.31
+deny from 67.202.113.162
+deny from 128.72.115.
+deny from 95.24.117.176
+deny from 142.0.128.0/19
+deny from 199.180.100.0/22
+deny from 192.74.238.48/28
+deny from 46.105.0.0/16
+deny from 66.249.64.0/19
+deny from 198.2.192.0/18
+deny from 184.104.0.0/15
+deny from 164.115.0.0/16
+deny from 5.39.36.8/29
+deny from 37.59.0.0/16
+deny from 27.152.0.0/13
+deny from 151.237.176.0/20
+deny from 61.154.0.0/15
+deny from 208.67.16.0/21
+deny from 142.4.117.28/30
+deny from 142.4.117.56/29
+deny from 69.147.224.0/19
+deny from 37.203.208.0/21
+deny from 184.154.0.0/16
+deny from 192.119.144.0/20
+deny from 175.44.0.0/16
+deny from 199.119.224.0/22
+deny from 176.31.0.0/16
+deny from 59.174.0.0/15
+deny from 222.76.0.0/14
+deny from 217.195.192.0/20
+deny from 125.78.0.0/15
+deny from 178.32.0.0/15
+deny from 50.115.160.0/20
+deny from 180.76.0.0/16
+deny from 182.88.0.0/14
+deny from 198.200.32.0/19
+deny from 192.74.245.112/28

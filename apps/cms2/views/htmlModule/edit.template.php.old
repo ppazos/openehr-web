@@ -1,0 +1,11 @@
+<?php
+
+YuppLoader::load('core.mvc.form', 'YuppForm2');
+YuppLoader::load('core.mvc', 'DisplayHelper');
+
+?>
+<form method="post" action="<?php echo h('url', array('action'=>'edit')); ?>">
+  <input type="hidden" name="id" value="<?php echo $module->getId(); ?>" />
+  <?php DisplayHelper::html( 'content', $module->getContent() ); ?>
+  <input type="submit" name="doit" value="Guardar" />
+</form>

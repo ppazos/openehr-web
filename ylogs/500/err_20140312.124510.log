@@ -1,0 +1,36 @@
+La accion <b>flashfreemind.css</b> no existe.
+
+#0 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('flashfreemind.c...', Array)
+#1 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): CmsController->flashfreemind.css()
+#2 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#3 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#4 {main}
+
+------------- Codigo donde se dio el error -------------
+#52          // Ya se verifico en RequestManager que el controller existe.
+#53          YuppLoader::load( "apps.". $ctx->getApp() .".controllers", $controllerClassName );
+#54 
+#55          // Debe verificar si tiene la accion y si la puede ejecutar, si no va a index.
+#56          // FIXME: para que pasarle el nombre del controller al mismo controller???
+#57 
+#58          $controllerInstance = new $controllerClassName( $this->params ); // Se usa abajo!!!
+#59          
+#60          // FIXME: la instancia del controller se crea con la accion como parametro,
+#61          //        si ya se sabe que accion se va a ejecutar,
+#62          //        para que hacer esta llamada con la accion como variable ???.
+#63          try
+#64          {
+#65 >>             $model_or_command = $controllerInstance->{$action}();
+#66          }
+#67          catch (Exception $e)
+#68          {
+#69             // No existe la accion o cualquier otra excepcion que pueda tirar
+#70             // Tira 500: Internal Server Error
+#71             $model_or_command = ViewCommand::display( '500',
+#72                                   new ArrayObject(array('message'=>$e->getMessage(), 'traceString'=>$e->getTraceAsString(), 'trace'=>$e->getTrace(), 'exception'=>$e)),
+#73                                   new ArrayObject() );
+#74          }
+#75 
+#76          // ======================================================================================
+#77          // PROCESA COMANDO (resultado de before_filters o de ejecucion del controlador)
+------------- /Codigo donde se dio el error -------------

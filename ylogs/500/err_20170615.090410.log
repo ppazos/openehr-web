@@ -1,0 +1,39 @@
+Undefined index: action
+
+#0 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(116): my_warning_handler(8, 'Undefined index...', '/home/bnninptm/...', 116, Array)
+#1 /home/bnninptm/public_html/apps/cms2/controllers/apps.cms2.controllers.UserController.class.php(551): YuppController->redirect(Array)
+#2 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(43): UserController->publicProfileAction(Array)
+#3 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('publicProfile', Array)
+#4 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): UserController->publicProfile()
+#5 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#6 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#7 {main}
+
+------------- Codigo donde se dio el error -------------
+#103        $ctx = YuppContext::getInstance();
+#104 
+#105        if ( array_key_exists('app', $params) ) // Si no me lo pasan, tengo que poner el actual.
+#106            $app  = $params['app'];
+#107        else
+#108            $app  = $ctx->getApp();
+#109            
+#110        if ( array_key_exists('controller', $params) ) // Si no me lo pasan, tengo que poner el actual.
+#111            $controller = $params['controller'];
+#112        else
+#113            $controller = $ctx->getController();
+#114         
+#115        // FIXME: si no se le pasa action se ejecuta la accion index?? deberia tirar una excepcion si no me pasan la accion??
+#116 >>        $action = $params['action'];
+#117        
+#118        if ( !isset($params['params']) ) $params['params'] = array();
+#119        
+#120        return ViewCommand::execute( $app, $controller, $action, $params['params'], $this->flash );
+#121     }
+#122     
+#123     
+#124     // ==========================================================================
+#125     // CRUD dinamico.
+#126     
+#127     /* Index deberia declararse en los controllers si o si.
+#128     public function index()
+------------- /Codigo donde se dio el error -------------

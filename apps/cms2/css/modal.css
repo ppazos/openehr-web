@@ -1,0 +1,33 @@
+* {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 12px;
+}
+
+body {
+  /* modal no tiene margen */
+  margin: 0;
+  
+  /* evita que muestre scroll horizontal */
+  overflow-x: hidden;
+}
+
+/* Muestra titulo en mismo color que el fondo de la modal ACF pero mas oscuro */
+h1 {
+  font-family: tahoma;
+  font-size: 16px;
+  color: #79C;
+  margin: 0;
+}
+h2 {
+  font-family: tahoma;
+  font-style: italic;
+  font-size: 14px;
+  color: #79C;
+  margin: 0;
+}
+h3 {
+  font-family: tahoma;
+  font-size: 13px;
+  color: #79C;
+  margin: 0;
+}

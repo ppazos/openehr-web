@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<app>
+  <name>cms2</name>
+  <description>Yupp CMS</description>
+  <version>0.1</version>
+  <langs>es</langs>
+  <code></code>
+  <tags></tags>
+  <site></site>
+  <docs></docs>
+  <update></update>
+  <entry_point>
+    <controller>cms</controller>
+    <action>index</action>
+  </entry_point>
+</app>

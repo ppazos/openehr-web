@@ -1,0 +1,38 @@
+Undefined index: Â¿El cafÃ© es amarillo?
+
+#0 /home/bnninptm/public_html/apps/cms2/controllers/apps.cms2.controllers.UserController.class.php(94): my_warning_handler(8, 'Undefined index...', '/home/bnninptm/...', 94, Array)
+#1 /home/bnninptm/public_html/core/mvc/core.mvc.YuppController.class.php(43): UserController->registerAction(Array)
+#2 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): YuppController->__call('register', Array)
+#3 /home/bnninptm/public_html/core/routing/core.routing.Executer.class.php(65): UserController->register()
+#4 /home/bnninptm/public_html/core/web/core.web.RequestManager.class.php(200): Executer->execute(Object(AppControllerFilters))
+#5 /home/bnninptm/public_html/index.php(72): RequestManager::doRequest()
+#6 {main}
+
+------------- Codigo donde se dio el error -------------
+#81       {
+#82          $errs = ''; // errores en json para el usuario
+#83          
+#84          // TODO: implementar estos chequeos como restricciones particulares en User, para poder mostrar junto
+#85          //       a los demas errores de validacion, p.e. si no ingresa su nombre.
+#86          
+#87          // ================================================================================================
+#88          // Verificacion de humanidad
+#89          if (!isset($this->params['humanity_check_response']))
+#90          {
+#91             header('Content-type: application/json');
+#92             return $this->renderString('{"status":"error", "msg":"Debe ingresar la verificacion.", "errors":{}}');
+#93          }
+#94 >>          if ($this->params['humanity_check_response'] !== User::$humanity_test[$this->params['question']])
+#95          {
+#96             header('Content-type: application/json');
+#97             return $this->renderString('{"status":"error", "msg":"La verificacion es incorrecta.", "errors":{}}');
+#98          }
+#99          
+#100          // ================================================================================================
+#101          // Hay un usuario con ese email?
+#102          //
+#103          if (User::countBy(Condition::EQ(User::TABLE, 'email', $this->params['email']), new ArrayObject()) == 1)
+#104          {
+#105             $errs .= '"email": "El correo '. $this->params['email'] .' ya est&aacute; registrado",';
+#106          }
+------------- /Codigo donde se dio el error -------------

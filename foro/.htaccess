@@ -1,0 +1,7 @@
+
+#  mod_rewrite in use
+RewriteEngine On
+# Si es un archivo fisico, dejarlo pasar.
+RewriteCond %{REQUEST_FILENAME} !-f
+# Todo va al punto de entrada
+RewriteRule (.*) ./index.php

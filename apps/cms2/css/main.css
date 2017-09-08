@@ -1,0 +1,219 @@
+body {
+ margin: 0px;
+ font-family: Verdana, Geneva, sans-serif;
+ font-size: 12px;
+ line-height: 1.5em;
+}
+body.edit {
+ padding-top: 2.9em; /* Es la altura de la topbar + su padding asi se ve el layout debajo */
+}
+/* Todos los elementos con bordes redondeados */
+#btn_cms_edit, #btn_cms_show, #modal, #modal_feedback, #global_feedback, .private_module_content {
+ border-bottom-right-radius: 5px;
+ -moz-border-radius-bottomright: 5px;
+ border-bottom-left-radius: 5px;
+ -moz-border-radius-bottomleft: 5px;
+ border-top-right-radius: 5px;
+ -moz-border-radius-topright: 5px;
+ border-top-left-radius: 5px;
+ -moz-border-radius-topleft: 5px;
+}
+a#btn_cms_show, a#btn_cms_edit {
+ padding: 5px;
+ background-color: #ffdf00;
+ border: 1px solid #ff9900;    
+}
+#login_box {
+ margin-right: 10px;
+ background-color: #fff; /* la skin deberia cambiar el color si no queda bien */
+ padding: 10px;
+ position: fixed;
+ right: 0;
+ top: 0;
+ z-index: 9999;
+ 
+ /* Bordes redondeados */
+ border-bottom-right-radius: 5px;
+ -moz-border-radius-bottomright: 5px;
+ border-bottom-left-radius: 5px;
+ -moz-border-radius-bottomleft: 5px;
+}
+#login_box div {
+ display: inline-block;
+ padding: 0 3px 0 3px;
+}
+#login_box .action {
+ padding: 0 3px 0 3px;
+}
+#login_box a {
+ color: blue;
+ text-decoration: none;
+}
+#login_box a:hover {
+ color: #ff0000;
+}
+/* Global, es el menu para editar lo que se esta viendo */
+#topbar {
+ width: 100%;
+ /*height: 30px;*/
+ height: 2.0em;
+ background-color: #fc3;
+ /*overflow: visible;*/
+ /*position: relative;*/
+ z-index: 999;
+ padding: 5px;
+ position: fixed;
+ top: 0;
+}
+#topbar ul {
+ margin: 0;
+ padding: 0;
+ list-style-type: none; /* para hacer el menu horizontal */
+ display: table;
+}
+#topbar ul li {
+ display: table-cell;
+ vertical-align: top;
+ padding: 5px;
+ margin-right: 5px;
+}
+#topbar ul li:hover {
+ background-color: #cf3;
+}
+/* estilo para el segundo nivel del menu */
+#topbar ul ul {
+ position: absolute;
+ z-index: 1000;
+ float: left;
+ padding: 5px;
+ background-color: #cf3;
+ margin-left: -5px; /* para que el ul ul aparezca alineado con el ul li donde puse el mouse para que el submenu ul ul este visible */
+}
+#topbar ul li li {
+ display: block;
+ float: none;
+}
+#topbar form {
+ margin: 0px;
+ padding: 0px;
+ display: inline-block;
+ vertical-align: bottom;
+}
+#menu_layout { /* Para alinear el menu layout de la topbar, con los menues de paginas y modulos, sin esto layout se ve 3px mas abajo. */
+ position: relative;
+ top: -3px;
+}
+/* Es necesario mover el contenido de las zonas para abajo,
+  tanto como la altura de la topbar cuando la topbar es visible,
+  o sea, cuando esta en modo edicion.
+  De lo contrario, las zonas tapan la topbar.
+*/
+#global_feedback_wrapper {
+ display: inline-block;
+ position: absolute; /* Quiero que aunque haga scroll el feedback aparezca en el mismo lugar */
+ z-index: 1001;
+ text-align: center;
+ width: 100%;
+ top: 0px;
+}
+#global_feedback {
+ display: none;
+ padding: 5px 10px 5px 10px;
+ position: relative;
+ z-index: 1001;
+ min-height: 18px;
+}
+/* Para mostrar pantallas modales */
+#modal {
+ display: none;
+ padding: 10px;
+ z-index: 101;
+ position: absolute;
+ background-color: #aaccff;
+ /* drop shadow */
+ -moz-box-shadow: 0px 0px 15px #000;
+ -webkit-box-shadow: 0px 0px 15px #000;
+ box-shadow: 0px 0px 15px #000;
+}
+#modal_close_container {
+ position: relative;
+ width: 100%;
+ text-align: right;
+ overflow: visible;
+}
+#modal_close {
+ float: right;
+ width: 28px;
+ height: 28px;
+ position: absolute;
+ cursor: pointer;
+ z-index: 101;
+ left: 99%;
+ top: -20px;
+ /* Bordes redondeados, arreglo para poder tirar la sombra y que quede similar a la sombra de la modal */
+ border-bottom-right-radius: 17px;
+ -moz-border-radius-bottomright: 17px;
+ border-bottom-left-radius: 17px;
+ -moz-border-radius-bottomleft: 17px;
+ border-top-right-radius: 17px;
+ -moz-border-radius-topright: 17px;
+ border-top-left-radius: 17px;
+ -moz-border-radius-topleft: 17px;
+ 
+ /* drop shadow, tira la sombra para que quede similar a la sombra de la modal */
+ -moz-box-shadow: 2px -1px 11px #000;
+ -webkit-box-shadow: 2px -1px 11px #000;
+ box-shadow: 2px -1px 11px #000;
+}
+#modal_feedback {
+ display: none;
+ background-color: #ffff80;
+ padding: 5px;
+ /* Para que se muestre sobre el contenido */
+ position: relative;
+ z-index: 10001;
+}
+#modal_feedback_container {
+ width: 100%;
+ position: absolute;
+ text-align: center;
+ top: 10px;
+ left: -0px;
+}
+#modal iframe {
+ background-color: #aaccff;
+ border: 0px;
+}
+#modal_underlay {
+ display: none;
+ position: fixed;
+ z-index: 0;
+ -khtml-opacity: 0.6;
+ -moz-opacity: 0.6;
+ opacity: 0.6; /* FF */
+ -ms-filter: "alpha(opacity=60)"; /* IE */
+ filter: alpha(opacity=60);
+ text-align: center; /* Centrar imagen de loading */
+ background: -webkit-gradient(
+  radial, 50% 50%, 0, 50% 50%, 550, from(#999), to(#000)
+ );
+ background: -moz-radial-gradient(
+  50% 50%, circle, #999 0px, #000 550px
+ );
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+}
+.private_module_content {
+ background-color: #f3edd2;
+ color: #c09853;
+ border: 1px solid #c09853;
+ padding: 10px;
+ margin: 5px;
+ text-align: center;
+}
+#powered_by {
+ float: right;
+ padding: 0 5px 5px 5px;
+}
