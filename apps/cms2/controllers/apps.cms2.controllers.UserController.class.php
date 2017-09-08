@@ -178,7 +178,7 @@ class UserController extends YuppController {
          $mail_body = $register_text;
          $mail_body = preg_replace('/\[USER_NAME\]/i', $obj->getUsername(), $mail_body);
          $mail_body = preg_replace('/\[USER_EMAIL\]/i', $obj->getEmail(), $mail_body);
-         $mail_body = preg_replace('/\[DOMAIN\]/i', 'http://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: ponerle la ruta hasta el login de recordar el password
+         $mail_body = preg_replace('/\[DOMAIN\]/i', 'https://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: ponerle la ruta hasta el login de recordar el password
     
          $header = "From: ". $cms_sender_name . " <" . $cms_sender_email . ">\r\n"; //optional headerfields
          $header .="Return-Path:<" . $cms_sender_email . ">\r\n"; // avoid ending in spam folder http://php.net/manual/en/function.mail.php
@@ -296,7 +296,7 @@ class UserController extends YuppController {
      $mail_body = preg_replace('/\[USER_NAME\]/i', $user->getUsername(), $mail_body);
      $mail_body = preg_replace('/\[USER_PASSWORD\]/i', $user->getPassword(), $mail_body);
      $mail_body = preg_replace('/\[ADMIN_EMAIL\]/i', $cms_sender_email, $mail_body);
-     $mail_body = preg_replace('/\[DOMAIN\]/i', 'http://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: calcular link a login
+     $mail_body = preg_replace('/\[DOMAIN\]/i', 'https://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: calcular link a login
 
      $header = "From: ". $cms_sender_name . " <" . $cms_sender_email . ">\r\n"; //optional headerfields
      $header .="Return-Path:<" . $cms_sender_email . ">\r\n"; // avoid ending in spam folder http://php.net/manual/en/function.mail.php
@@ -604,7 +604,7 @@ class UserController extends YuppController {
          // En la base se guarda como md5 (TODO).
          $mail_body = $changePassword_text;
          $mail_body = preg_replace('/\[USER_PASSWORD\]/i', $user->getPassword(), $mail_body); // TODO: reset password
-         $mail_body = preg_replace('/\[DOMAIN\]/i', 'http://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: ponerle la ruta hasta el login de recordar el password
+         $mail_body = preg_replace('/\[DOMAIN\]/i', 'https://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: ponerle la ruta hasta el login de recordar el password
     
          $header = "From: ". $cms_sender_name . " <" . $cms_sender_email . ">\r\n"; //optional headerfields
          $header .="Return-Path:<" . $cms_sender_email . ">\r\n"; // avoid ending in spam folder http://php.net/manual/en/function.mail.php
@@ -791,7 +791,7 @@ class UserController extends YuppController {
             $mail_body = $sendPassword_text;
             $mail_body = preg_replace('/\[USER_PASSWORD\]/i', $user->resetPassword(), $mail_body);
             $mail_body = preg_replace('/\[ADMIN_EMAIL\]/i', $cms_sender_email, $mail_body);
-            $mail_body = preg_replace('/\[DOMAIN\]/i', 'http://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: ponerle la ruta hasta el login de recordar el password
+            $mail_body = preg_replace('/\[DOMAIN\]/i', 'https://'.$_SERVER['HTTP_HOST'].$_base_dir.'/'.$this->appName, $mail_body); // TODO: ponerle la ruta hasta el login de recordar el password
     
             $header = "From: ". $cms_sender_name . " <" . $cms_sender_email . ">\r\n"; //optional headerfields
             $header .="Return-Path:<" . $cms_sender_email . ">\r\n"; // avoid ending in spam folder http://php.net/manual/en/function.mail.php

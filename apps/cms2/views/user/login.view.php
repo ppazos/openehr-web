@@ -61,7 +61,7 @@ YuppLoader::load('core.mvc.form', 'YuppForm2');
 		//console.log(parent.modal); undefined sino se muestra como modal
 		if (parent.modal == undefined)
 		{
-		   location.href = "http://<?php echo $_SERVER['HTTP_HOST']; ?>";
+		   location.href = "https://<?php echo $_SERVER['HTTP_HOST']; ?>";
 		}
 	
       $(document).ready( function() {

@@ -96,7 +96,7 @@ class CmsHelpers {
        if ($size > 512) $size = 512;
        if ($size <= 0) $size = 40;
        
-       echo '<img src="http://www.gravatar.com/avatar/'.$hash.'.jpg?s='.$size.'&d='.$default.'" />';
+       echo '<img src="https://www.gravatar.com/avatar/'.$hash.'.jpg?s='.$size.'&d='.$default.'" />';
    }
    
    /**

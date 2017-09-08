@@ -568,7 +568,7 @@ YuppLoader::load('apps.cms2.helpers', 'CmsHelpers');
                               ));
     ?>
     <div id="powered_by">
-      <a href="http://code.google.com/p/yupp-cms" target="_blank"><img src="<?php echo $_base_dir; ?>/apps/cms2/images/yuppcms.png" /></a>
+      <a href="https://code.google.com/p/yupp-cms" target="_blank"><img src="<?php echo $_base_dir; ?>/apps/cms2/images/yuppcms.png" /></a>
     </div>
   </body>
 </html>

@@ -20,7 +20,7 @@ class NewsLetter extends PersistentObject
      
       // Link a "ver online"
       // En lugar de tener el id en el link, poner una key sin estructura para que no puedan ingresar el id a mano
-      $linkToDisplayOnline = '<div align="center">Si ud. no visualiza correctamente este correo, haga clic <a href="http://'. $_SERVER['HTTP_HOST'] . '/cms2/notifications/display?id='. $this->getId() .'" target="_blank">aqui</a></div>';
+      $linkToDisplayOnline = '<div align="center">Si ud. no visualiza correctamente este correo, haga clic <a href="https://'. $_SERVER['HTTP_HOST'] . '/cms2/notifications/display?id='. $this->getId() .'" target="_blank">aqui</a></div>';
      
       try
       {

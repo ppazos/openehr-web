@@ -113,22 +113,22 @@ global $_base_dir;
       <div id="personal_card_footer">
         <?php if ($f = $user->getFacebook()) : ?>
           <div class="footer_link">
-            <a href="http://<?php echo $f; ?>" target="_blank">facebook</a>
+            <a href="https://<?php echo $f; ?>" target="_blank">facebook</a>
           </div>
         <?php endif; ?>
         <?php if ($l = $user->getLinkedin()) : ?>
           <div class="footer_link">
-            <a href="http://<?php echo $l; ?>" target="_blank">linkedin</a>
+            <a href="https://<?php echo $l; ?>" target="_blank">linkedin</a>
           </div>
         <?php endif; ?>
         <?php if ($t = $user->getTwitter()) : ?>
           <div class="footer_link">
-            <a href="http://twitter.com/#!/<?php echo $t; ?>" target="_blank">twitter</a>
+            <a href="https://twitter.com/#!/<?php echo $t; ?>" target="_blank">twitter</a>
           </div>
         <?php endif; ?>
         <?php if ($g = $user->getGoogleplus()) : ?>
           <div class="footer_link">
-            <a href="http://<?php echo $g; ?>" target="_blank">google+</a>
+            <a href="https://<?php echo $g; ?>" target="_blank">google+</a>
           </div>
         <?php endif; ?>
       </div>

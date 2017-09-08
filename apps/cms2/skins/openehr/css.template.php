@@ -1,4 +1,4 @@
-<link rel="shortcut icon" href="http://openehr.org.es/favicon.ico">
+<link rel="shortcut icon" href="https://openehr.org.es/favicon.ico">
 <style type="text/css">
   body {
     margin: 0px 0px 20px 0px;
@@ -154,7 +154,7 @@
     min-width: 312px; /* Sin esto no muestra el logo */
     /*height: 89px;*/
     height: 99px; /* Dejo 10px mas que el H de la imagen para margen */
-    background: url('http://openehr.org.es/apps/cms2/skins/openehr/logo1.png') center center no-repeat;
+    background: url('https://openehr.org.es/apps/cms2/skins/openehr/logo1.png') center center no-repeat;
   }
   #top a {
     display: block;

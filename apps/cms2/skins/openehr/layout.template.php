@@ -4,7 +4,7 @@
 <div id="top_bg">
   <div id="top_container">
     <div id="top">
-      <a href="http://www.openehr.org.es" title="Comunidad de openEHR en español">&nbsp;</a>
+      <a href="https://www.openehr.org.es" title="Comunidad de openEHR en español">&nbsp;</a>
     </div>
     <div id="top_right" class="zone">
       <h2>Trabajando juntos por una mejor salud para todos</h2>
